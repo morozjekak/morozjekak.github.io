@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Каталог для бота</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <header class="appbar">
+    <div class="logo">A</div>
+    <div class="search-wrapper">
+      <input class="search" type="search" placeholder="Поиск по названию..." id="searchInput">
+    </div>
+    <button id="tgClose" class="icon-btn" aria-label="Закрыть">✕</button>
+  </header>
+
+  <!-- Категории -->
+  <section class="chips" id="categories"></section>
+
+  <!-- Подкатегории -->
+  <section class="chips sub" id="subcategories"></section>
+
+  <!-- Сортировка -->
+  <section class="sort-bar">
+    <label>Сортировка:</label>
+    <select id="sortSelect">
+      <option value="default">По умолчанию</option>
+      <option value="time-asc">По времени ↑</option>
+      <option value="time-desc">По времени ↓</option>
+      <option value="size-asc">По размеру ↑</option>
+      <option value="size-desc">По размеру ↓</option>
+    </select>
+  </section>
+
+  <!-- Сетка плиток -->
+  <main class="grid" id="grid"></main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
