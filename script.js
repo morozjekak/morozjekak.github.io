@@ -8,7 +8,7 @@ if (tg) {
 }
 
 // Замените на URL вашего API (VPS IP или домен)
-const API_URL = 'http://your-vps-ip:3000';
+const API_URL = 'http://9e02df93c336.vps.myjino.ru:49294';
 
 const CATEGORIES = ["Ассеты", "Плагины", "Шрифты", "Premiere Pro", "Photoshop"];
 const generateSubcats = (cat) => Array.from({ length: 8 }, (_, i) => `${cat} • ${i + 1}`);
@@ -274,4 +274,5 @@ $close.addEventListener('click', () => tg?.close?.() || window.close());
 renderCategories();
 renderSubcats();
 renderGrid();
+
 loadUserStatus();
