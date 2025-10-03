@@ -8,7 +8,7 @@ if (tg) {
 }
 
 // Замените на URL вашего API (VPS IP или домен)
-const API_URL = 'http://9e02df93c336.vps.myjino.ru:49294';
+const API_URL = 'https://morozjekak.github.io/';
 
 const CATEGORIES = ["Ассеты", "Плагины", "Шрифты", "Premiere Pro", "Photoshop"];
 const generateSubcats = (cat) => Array.from({ length: 8 }, (_, i) => `${cat} • ${i + 1}`);
@@ -276,3 +276,4 @@ renderSubcats();
 renderGrid();
 
 loadUserStatus();
+
